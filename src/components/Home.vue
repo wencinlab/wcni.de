@@ -26,7 +26,7 @@
       </template>
       <span class="contact-item" @click="toggleDarkMode" :style="{ '--hover-color': isDarkMode ? '#ffcc00' : '#666' }">
         <i :class="darkModeIconClass"></i>
-        <span class="tooltip">{{ isDarkMode ? '浅色' : '深色' }}</span>
+        <span class="tooltip">{{ isDarkMode ? 'Light' : 'Dark' }}</span>
       </span>
     </div>
     <Website /> 
@@ -67,10 +67,7 @@ const userName = ref(import.meta.env.VITE_APP_USER_NAME);
 const descriptionElement = ref(null);
 
 const predefinedDescriptions = [
-  "你好鸭，欢迎来到我的主页！！",
-  "随时可以联系我，期待与你交流。",
-  "愿你历尽千帆，归来仍是少年。",
-  "梦想还是要有的，万一实现了呢？",
+  "Hello, welcome to my homepage !",
   "I hope you have a happy day every day."
 ];
 
